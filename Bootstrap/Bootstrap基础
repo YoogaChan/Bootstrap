@@ -1,1 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery-3.2.1.js"> </script>
+    <script src="js/bootstrap.js"></script>
+    <style>
+        .col-md-1{border: 1px solid black};
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row"> <!--12列 每一列占一个空格-->
+    <div class="col-md-1">枕上诗书闲处读</div>
+    <div class="col-md-1">门前风景雨来佳</div>
+    <div class="col-md-1">桃李春风一壶酒</div>
+    <div class="col-md-1">江湖夜雨十年灯</div>
+    <div class="col-md-1">正是江南好风景</div>
+    <div class="col-md-1">落花时节又逢君</div>
+    <div class="col-md-1">野桃含笑竹篱短</div>
+    <div class="col-md-1">溪柳自摇沙水清</div>
+    <div class="col-md-1">黄梅时节家家雨</div>
+    <div class="col-md-1">野桃含笑竹篱短</div>
+    <div class="col-md-1">溪柳自摇沙水清</div>
+    <div class="col-md-1">黄梅时节家家雨</div>
+</div>
+<div class="row"><!--2列 第一列占8个空格，第二列占4个空格-->
+    <div class="col-md-8"style="border: 1px solid black">枕上诗书闲处读</div>
+    <div class="col-md-4"style="border: 1px solid black">门前风景雨来佳</div>
+</div>
 
+<div class="row"><!--3列 每一列占4个空格-->
+    <div class="col-md-4"style="border: 1px solid black">枕上诗书闲处读</div>
+    <div class="col-md-4"style="border: 1px solid black">门前风景雨来佳</div>
+    <div class="col-md-4"style="border: 1px solid black">门前风景雨来佳</div>
+</div>
+
+<div class="row"><!--2列 每一列占6个空格-->
+    <div class="col-md-6"style="border: 1px solid black">枕上诗书闲处读</div>
+    <div class="col-md-6"style="border: 1px solid black">门前风景雨来佳</div>
+</div>
+
+<!--\(^o^)/~\(^o^)/~\(^o^)/~\(^o^)/~自定义跨设备布局\(^o^)/~\(^o^)/~\(^o^)/~\(^o^)/~\(^o^)/~ -->
+
+
+    <div class="row">
+        <div class="col-xs-12 col-md-8"style="border: 1px solid black">.col-xs-12 .col-md-8</div>
+        <div class="col-xs-6 col-md-4"style="border: 1px solid black">.col-xs-6 .col-md-4</div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-6 col-md-4"style="border: 1px solid black">.col-xs-6 .col-md-4</div>
+        <div class="col-xs-6 col-md-4"style="border: 1px solid black">.col-xs-6 .col-md-4</div>
+        <div class="col-xs-6 col-md-4"style="border: 1px solid black">.col-xs-6 .col-md-4</div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-6" style="border: 1px solid black">.col-xs-6</div>
+        <div class="col-xs-6" style="border: 1px solid black">.col-xs-6</div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-6 col-sm-3"style="border: 1px solid black">.col-xs-6 .col-sm-3Resize your viewport or check it out on your phone for an example.</div>
+        <div class="col-xs-6 col-sm-3"style="border: 1px solid black">.col-xs-6 .col-sm-3</div>
+        <div class="clearfix visible-xs-block"style="border: 1px solid black"></div>  <!--清除浮动-->
+        <div class="col-xs-6 col-sm-3"style="border: 1px solid black">.col-xs-6 .col-sm-3</div>
+        <div class="col-xs-6 col-sm-3"style="border: 1px solid black">.col-xs-6 .col-sm-3</div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-5 col-md-6"style="border: 1px solid black">.col-sm-5 .col-md-6</div>
+        <div class="col-sm-5 col-sm-offset-2 col-md-6 col-md-offset-0"style="border: 1px solid black">.col-sm-5 .col-sm-offset-2 .col-md-6 .col-md-offset-0</div>
+    </div>
+
+<!--表格-->
+<table class="table table table-bordered table table-hover table-condensed">
+    <tr class="active">
+        <th>江湖夜雨十年灯</th>
+        <th>江湖夜雨十年灯</th>
+        <th>江湖夜雨十年灯</th>
+        <th>江湖夜雨十年灯</th>
+        <th>江湖夜雨十年灯</th>
+        <th>江湖夜雨十年灯</th>
+    </tr>
+    <tr class="success">
+        <td>江湖夜雨十年灯</td>
+        <td>江湖夜雨十年灯</td>
+        <td>江湖夜雨十年灯</td>
+        <td>江湖夜雨十年灯</td>
+        <td>江湖夜雨十年灯</td>
+        <td>江湖夜雨十年灯</td>
+    </tr>
+    <tr class="warning">
+        <td>江湖夜雨十年灯</td>
+        <td>江湖夜雨十年灯</td>
+        <td>江湖夜雨十年灯</td>
+        <td>江湖夜雨十年灯</td>
+        <td>江湖夜雨十年灯</td>
+        <td>江湖夜雨十年灯</td>
+    </tr>
+    <tr class="danger">
+        <td>江湖夜雨十年灯</td>
+        <td>江湖夜雨十年灯</td>
+        <td>江湖夜雨十年灯</td>
+        <td>江湖夜雨十年灯</td>
+        <td>江湖夜雨十年灯</td>
+        <td>江湖夜雨十年灯</td>
+    </tr>
+    <tr class="info">
+        <td>江湖夜雨十年灯</td>
+        <td>江湖夜雨十年灯</td>
+        <td>江湖夜雨十年灯</td>
+        <td>江湖夜雨十年灯</td>
+        <td>江湖夜雨十年灯</td>
+        <td>江湖夜雨十年灯</td>
+    </tr>
+
+</table>
+
+
+    <!--按钮  -->
+
+    <button class="btn btn-default">默认样式</button>
+    <button class="btn btn-primary btn-lg">首选项</button>
+    <button class="btn btn-success btn-sm">成功</button>
+    <button class="btn btn-info btn-xs">一般信息</button>
+    <button class="btn btn-danger">警告</button>
+    <button class="btn btn-warning btn-block">危险</button>
+    <button class="btn btn-link">链接</button>
+
+    <!--列偏移-->
+
+    <div class="row">       <!--col-md-4-offset-4，将col-md-4向右偏移4个列的宽度-->
+        <div class="col-md-4" style="border: 1px solid black">col-md-4</div>
+        <div class="col-md-4-offset-4" style="border: 1px solid black">col-md-4-offset-4</div>
+    </div>
+    <div class="row">
+        <div class="col-md-3" style="border: 1px solid black">col-md-3</div>
+        <div class="col-md-3-offset-3" style="border: 1px solid black">col-md-3-offset-3</div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3" style="border: 1px solid black;text-align: center ">c.col-md-6 .col-md-offset-3</div>
+    </div>
+
+    <!--嵌套列-->
+    <div class="row">
+        <div class="col-sm-9"style="background-color: lightpink">  <!--在守望先锋里面嵌套 英雄联盟、CSGO全球攻势两个同级的列-->
+            守望先锋
+    <div class="row">
+        <div class="col-xs-8 col-sm-6"style="background-color: lightgreen">
+            英雄联盟
+        </div>
+        <div class="col-xs-4 col-sm-6"style="background-color: lightblue">
+            CSGO全球攻势
+        </div>
+
+    </div>
+        </div>
+    </div>
+
+    <!--列排序(push从左空3个列再开始，pull从右空9个列再开始)-->
+<div class="row">
+    <div class="col-md-9 col-md-push-3"style="border: 1px solid black;background-color: lightgreen">col-md-9 col-md-push-3</div>
+    <div class="col-md-3-pull-9"style="border: 1px solid black;background-color: lightblue">col-md-3-pull-9</div>
+</div>
+
+    <!--排版（为大标题添加小标题标注）-->
+<h1>守望先锋<small>我喜欢的游戏</small></h1>
+<h2>英雄联盟<small>我喜欢的游戏</small></h2>
+<h3>黑色沙漠<small>我喜欢的游戏</small></h3>
+<h4>CSGO全球攻势<small>我喜欢的游戏</small></h4>
+<h5>洛奇英雄传<small>我喜欢的游戏</small></h5>
+<h6>求生之路<small>我喜欢的游戏</small></h6>
+</div>
+
+<!--引用-->
+<blockquote>
+    <p>去年相逢此门中，人与桃花相映红。人面不知何处去，桃花依旧笑春风。</p>
+</blockquote>
+
+<blockquote class="blockquote-reverse"><!--右对齐-->
+    <p>春眠不觉晓，处处闻啼鸟。夜来风雨声，花落知多少。</p>
+    <footer>孟浩然<cite title="Source Title">《春晓》</cite></footer>
+</blockquote>
+
+
+
+</body>
+</html>
