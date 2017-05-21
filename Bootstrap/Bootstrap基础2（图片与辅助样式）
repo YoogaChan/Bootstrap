@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery-3.2.1.js"> </script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/holder.js" ></script>
+</head>
+<body>
+<div class="container">
+
+<h2 class="page-header">图片与辅助样式</h2>
+    <img src="img/1.png" class="img-responsive" style="width: 400px;height: 400px">
+  <hr/>
+    <img src="img/1.png" style="width: 100px;height:100px"class="img-rounded">
+    <img src="img/2.png" style="width: 100px;height:100px"class="img-circle">
+    <img src="img/3.png" style="width: 100px;height:100px"class="img-thumbnail">
+    <img src="holder.js/200x200?random=yes"class="img-thumbnail">
+
+ <!--文本样式-->
+    <p class="text-primary">我思故我在</p>
+    <p class="text-warning">心外无物</p>
+    <p class="text-info">人不能同时踏进同一条河流</p>
+    <p class="bg-info">意识不以事物的变化而转移<button class="close">X</button></p>
+    <button class="btn btn-primary">更多<span class="caret"></span></button>
+    <span class="glyphicon glyphicon-gift" style="font-size: 30px;"></span>
+</div>
+
+</body>
+</html>
