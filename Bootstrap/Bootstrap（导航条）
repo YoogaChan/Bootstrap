@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>顶部导航条</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery-3.2.1.js"> </script>
+    <script src="js/bootstrap.js"></script>
+</head>
+<body>
+
+<nav class="nav navbar-inverse navbar-fixed-top"><!-- 导航栏 黑色背景白色文本的反色  导航栏固定在页面的顶部 -->
+<div class="container">
+<div class="navbar-header">
+    <!--  折叠起来的导航栏实际上是一个带有 class .navbar-toggle 及两个 data- 元素的按钮。
+    第一个是 data-toggle，用于告诉 JavaScript 需要对按钮做什么，
+    第二个是 data-target，指示要切换到哪一个元素。 -->
+    <!-- 类 navbar-toggle 列表切换  collapsed 折叠 -->
+       <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mynav">   <!--切换到#mynav-->
+        <span class="icon-bar"></span> <!--icon-bar  一个小横线-->
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand">我的nav</a><!--增大字体-->
+
+    </div>
+    <div class="navbar-collapse collapse" id="mynav">
+      <ul class="nav navbar-nav">
+          <li class="active"><a href="#">守望先锋</a></li>
+          <li><a href="#">枪火游侠</a></li>
+          <li><a href="#">虚幻争霸</a></li>
+          <li><a href="#">风暴英雄</a></li>
+      </ul>
+  </div>
+
+    </div>
+
+    </nav>
+
+    </body>
+    </html>
