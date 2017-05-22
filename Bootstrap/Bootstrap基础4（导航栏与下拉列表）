@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Bootstrap(导航栏与下拉列表)</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery-3.2.1.js"> </script>
+    <script src="js/bootstrap.js"></script>
+</head>
+<body>
+      <div class="container">
+   <div class=" btn-group">
+       <button type="button" class="btn btn-primary btn-group-lg">天使</button>
+       <button type="button" class="btn btn-primary">安娜</button>
+       <button type="button" class="btn btn-primary">黑影</button>
+       <button type="button" class="btn btn-primary">士兵76</button>
+       <button type="button" class="btn btn-primary">源氏</button>
+       <button type="button" class="btn btn-primary">半藏</button>
+       <button type="button" class="btn btn-primary">麦克雷</button>
+   </div>
+
+   <div class="input-group">
+<span class="input-group-addon">@</span>
+<input type="text" class="form-control" placeholder="用户名">
+   </div>
+          <!--作为额外元素的按钮式下拉菜单         -->
+   <div class="input-group">
+       <div class="input-group-btn">
+
+         <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">我喜欢的游戏<span class="caret"></span></button>
+         <ul class="dropdown-menu">
+             <li><a href="#">虚幻争霸</a></li>
+             <li><a href="#">守望先锋</a></li>
+             <li><a href="#">神之浩劫</a></li>
+             <li class="divider">枪火游侠</li>
+             <li><a href="#">英雄联盟</a></li>
+         </ul>
+       </div>
+   </div>
+  </div>
+</body>
+</html>
