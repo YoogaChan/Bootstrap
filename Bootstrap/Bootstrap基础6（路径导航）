@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>路径导航</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery-3.2.1.js"> </script>
+    <script src="js/bootstrap.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="pagination">
+         <h2 class="page-header">路径导航</h2>
+           <ul class="breadcrumb">   <!--面包屑-->
+                <li><a href="#">守望先锋</a></li>
+                <li><a href="#">虚幻争霸</a></li>
+                <li><a href="#">枪火游侠</a></li>
+                <li><a href="#">英雄联盟</a></li>
+                <li><a href="#">神之浩劫</a></li>
+            </ul>
+            </hr>
+            <ul class="pagination pagination-lg">   <!--分页-->
+                <li><a href="#">上一页</a></li>
+                <li><a href="#">虚幻争霸</a></li>
+                <li><a href="#">枪火游侠</a></li>
+                <li><a href="#">英雄联盟</a></li>
+                <li><a href="#">下一页</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
