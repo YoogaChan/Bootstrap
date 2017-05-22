@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <title>Bootstrap导航</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <script src="js/jquery-3.2.1.js"> </script>
+        <script src="js/bootstrap.js"></script>
+    </head>
+</head>
+<body>
+    <div class="container">
+       <h2 class="page-header">标签页导航</h2>
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="">守望先锋</a></li>
+            <li ><a href="">虚幻争霸</a></li>
+            <li ><a href="">神之浩劫</a></li>
+            <li ><a href="">枪火游侠</a></li>
+        </ul>
+    </div>
+    <h3 class="page-header">胶囊式导航</h3>
+    <ul class="nav nav-pills">
+        <li class="active"><a href="">守望先锋</a></li>
+        <li ><a href="">虚幻争霸</a></li>
+        <li ><a href="">神之浩劫</a></li>
+        <li ><a href="">枪火游侠</a></li>
+    </ul>
+
+
+    <h3 class="page-header">胶囊式垂直导航</h3>
+    <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="">守望先锋</a></li>
+        <li ><a href="">虚幻争霸</a></li>
+        <li ><a href="">神之浩劫</a></li>
+        <li ><a href="">枪火游侠</a></li>
+    </ul>
+    <h3 class="page-header">胶囊式自适应导航</h3>
+    <ul class="nav nav-pills nav-justified">
+        <li class="active"><a href="">守望先锋</a></li>
+        <li ><a href="">虚幻争霸</a></li>
+        <li ><a href="">神之浩劫</a></li>
+        <li ><a href="">枪火游侠</a></li>
+    </ul>
+    <h3 class="page-header">多级下拉菜单导航（二级导航）</h3>
+    <ul class="nav nav-pills nav-justified">      <!--胶囊导航-->
+        <li class="active"><a href="">虚幻争霸</a></li>
+        <li ><a href="#" class="dropdown-toggle" data-toggle="dropdown">守望先锋<span class="caret"></span></a>
+             <ul class="dropdown-menu nav-justified">   <!--隐藏的下拉菜单-->
+                 <li><a href="#">网易游戏</a></li>
+                 <li><a href="#">腾讯游戏</a></li>
+                 <li><a href="#">畅游在线</a></li>
+                 <li><a href="#">世纪天成</a></li>
+             </ul>
+        </li>
+        <li ><a href="">神之浩劫</a></li>
+        <li ><a href="">枪火游侠</a></li>
+    </ul>
+    </div>
+
+</body>
+</html>
