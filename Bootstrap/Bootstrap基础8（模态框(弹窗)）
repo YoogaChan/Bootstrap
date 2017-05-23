@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>模态框(弹窗)</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery-3.2.1.js"> </script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/holder.js"></script>
+</head>
+<body>
+<div class="container">
+    <h2 class="page-header">模态框(弹窗)</h2>
+    <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#mymodal">点我(*^__^*)</button>
+    <div class="modal fade" id="mymodal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class=“modal-header>
+                    <div class="close" data-dismiss="modal">X</div>
+                    <h3>Overwatch</h3>
+                </div>
+                <div class="modal-body">
+                    <h4>守望先锋</h4>
+                    <p>《守望先锋》（Overwatch，简称OW） 是由暴雪娱乐公司开发的一款第一人称射击游戏，于2016年5月24日全球上市，中国大陆地区由网易公司代理。
+                        游戏以未来地球为背景，讲述人类、守望先锋成员和智能机械的恩怨纠葛。游戏拥有22位英雄，每一位英雄都有各自标志性的武器和技能。</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-default" data-dismiss="modal">close</button>
+                    <button class="btn btn-primary" id="save">save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    $ (function () {
+      $("#save").click(function () {
+          alert("登录成功了")
+          $("#mymodal").modal("hide");//关闭弹出
+      });
+    })
+</script>
+</html>
