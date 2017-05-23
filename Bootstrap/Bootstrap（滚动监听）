@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>滚动监听</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery-3.2.1.js"> </script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/holder.js"></script>
+    <style>
+        *{
+            margin: 0px;padding: 0px;
+        }
+      body{
+          margin-top: 60px;
+          position: relative;
+      }
+    </style>
+</head>
+<body data-spy="scroll"data-target="#mynav"data-offset="100">
+ <div class="container">
+     <h2 class="page-header">滚动监听</h2>
+     <nav class="nav navbar-inverse navbar-fixed-top "><!-- 导航栏 黑色背景白色文本的反色  导航栏固定在页面的顶部 -->
+         <div class="container">
+             <div class="navbar-header">
+                 <!--  折叠起来的导航栏实际上是一个带有 class .navbar-toggle 及两个 data- 元素的按钮。
+                 第一个是 data-toggle，用于告诉 JavaScript 需要对按钮做什么，
+                 第二个是 data-target，指示要切换到哪一个元素。 -->
+                 <!-- 类 navbar-toggle 列表切换  collapsed 折叠 -->
+                 <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mynav">
+                     <!--data-toggle="collapse" 添加在想要展开或折叠的组件的链接或者按钮上-->
+                     <!--data-target属性 添加在点击展开的"父组件"，它的值是被展开"子组件"的 id="mynav"-->
+                     <span class="icon-bar"></span> <!--icon-bar  一个小横线-->
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                 </button>
+                 <a class="navbar-brand">My game</a><!--增大字体-->
+             </div>
+             <div class="navbar-collapse collapse" id="mynav">
+                 <ul class="nav navbar-nav">
+                     <li class="active"><a href="#overwatch">守望先锋</a></li>
+                     <li><a href="#palading">枪火游侠</a></li>
+                     <li><a href="#palagong">虚幻争霸</a></li>
+                     <li><a href="#stormheros">风暴英雄</a></li>
+                 </ul>
+             </div>
+         </div>
+     </nav>
+     <div class="panel panel-primary">
+         <div class="panel-heading">
+             <div class="panel-title">
+                 <h3 id="overwatch">守望先锋</h3>
+             </div>
+         </div>
+         <div class="panel-body">
+             <img src="img/overwatch.jpg">
+             <p>
+                 《守望先锋》（Overwatch，简称OW） 是由暴雪娱乐公司开发的一款第一人称射击游戏，于2016年5月24日全球上市，中国大陆地区由网易公司代理。
+                 游戏以未来地球为背景，讲述人类、守望先锋成员和智能机械的恩怨纠葛。游戏拥有22位英雄，每一位英雄都有各自标志性的武器和技能。
+             </p>
+         </div>
+     </div>
+     <div class="panel panel-danger">
+         <div class="panel-heading">
+             <div class="panel-title">
+                 <h3 id="palading">枪火游侠</h3>
+             </div>
+         </div>
+         <div class="panel-body">
+             <img src="img/palading.jpg">
+             <p>
+              《枪火游侠》由《神之浩劫》厂商Hi-RezStudios研发制作的FPS网游新作，是一款奇幻和科幻相结合的架空世界题材，以射击元素为基础，融合了英雄技能、具有单局成长（卡牌系统）的团队策略竞技游戏。《枪火游侠》美式卡通风格颇为浓厚，原生态的战场世界内，奇幻、科技与魔法融为一体。这里有着满覆冰霜的冰雪世界，也有魔法砌成的冰之神殿，还有隐藏无尽财宝的神殿废墟……在这个美漫的世界中，游侠们可以展开伟大的冒险。
+             </p>
+         </div>
+     </div>
+     <div class="panel panel-info">
+         <div class="panel-heading">
+             <div class="panel-title">
+                 <h3 id="palagong">虚幻争霸</h3>
+             </div>
+         </div>
+         <div class="panel-body">
+             <img src="img/palagong.jpg" alt="">
+             <p>
+                 《虚幻争霸》是一款由Epic Games开发、国内由腾讯代理的MOBA射击游戏。
+                 本作原名《帕拉贡》，2016年12月09日国内腾讯宣布代理并重新定名。游戏由虚幻引擎4开发。玩家在3rd人称视角下操作各具特色的英雄与卡牌组合进行对战。
+             </p>
+         </div>
+     </div>
+     <div class="panel panel-warning">
+         <div class="panel-heading">
+             <div class="panel-title">
+                 <h3 id="stormheros">风暴英雄</h3>
+             </div>
+         </div>
+         <div class="panel-body">
+             <img src="img/stormheros.jpg" alt="">
+             <p>
+                 《风暴英雄》 是由暴雪娱乐公司开发的一款运行在Windows和Mac OS上的在线多人竞技PC游戏。
+                 游戏中的英雄角色主要来自于暴雪三大经典游戏系列：《魔兽世界》、《暗黑破坏神》和《星际争霸》。它是一款道具收费的游戏，与《星际争霸Ⅱ》基于同一引擎开发。
+                 该游戏最早在2010年的时候就被提及，当时游戏名为《暴雪DOTA》但因与"Valve"发生商标纠纷，庭外和解，因此。两公司达成了一条协议。暴雪因此更名为《暴雪全明星》。最终在2013年10月18日，暴雪正式更名为《风暴英雄》，于2014年10月17日开启测试，2015年5月20日进行公测并在6月3日正式发布。
+             </p>
+         </div>
+     </div>
+ </div>
+</body>
+</html>
