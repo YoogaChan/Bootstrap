@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>工具提示框、警告框、弹出框</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery-3.2.1.js"> </script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/holder.js"></script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+            $('[data-toggle="tooltip"]').tooltip({trigger:"click"});
+            $('[data-toggle="popover"]').popover();
+
+        })
+    </script>
+</head>
+<body>
+
+<div class="container">
+    <h2 class="page-header">工具提示框</h2>
+    <button class="btn btn-success btn-lg" title="向上" data-toggle="tooltip" data-placement="top" style="margin-top: 30px">一路向北</button><br/>
+    <button class="btn btn-primary btn-lg" title="向左" data-toggle="tooltip" data-placement="left" style="margin-left: 30px">一路向东</button>
+    <button class="btn btn-info btn-lg" title="向右" data-toggle="tooltip" data-placement="right" style="margin-right: 30px">一路向西</button><br/>
+    <button class="btn btn-danger btn-lg" title="向下" data-toggle="tooltip" data-placement="bottom" style="margin-bottom: 30px">一路向南</button>
+      <br/>
+    <h2 class="page-header">警告框</h2>
+     <div class="alert alert-warning">
+         <button class="close" data-dismiss="alert">&times;</button>
+         <p>禁止入内</p>
+     </div>
+
+    <br/>
+    <h2 class="page-header">弹出框</h2>
+     <button class="btn btn-primary" title="一路向西" data-content="精彩即将上映!" data-toggle="popover" data-placement="right" style="margin-right: 30px;">快播</button>
+</div>
+</body>
+</html>
