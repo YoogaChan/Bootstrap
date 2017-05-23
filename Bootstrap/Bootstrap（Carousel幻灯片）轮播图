@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Carousel</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery-3.2.1.js"> </script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/holder.js"></script>
+    <style>
+    img{ width: 100%}
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2 class="page-header">Carousel</h2>
+    <!--carousel slide属性 接受关键字 prev 或 next，用来改变幻灯片相对于当前位置的位置。-->
+    <div class="carousel slide" data-ride="carousel" id="mycarousel"><!--data-ride="carousel" 属性用于标记轮播在页面加载时就开始动画播放。-->
+        <!--图片容器 carousel-inner -->
+     <div class="carousel-inner" ><!-- 轮播（Carousel）项目 -->
+         <div class="item active"><!--激活 item-->
+             <img src="img/palagong.jpg/">
+             <div class="carousel-caption">  <!--.carousel-caption 元素向幻灯片添加标题-->
+                 <h2>虚幻争霸</h2>
+                 <p>来自虚空的战争</p>
+             </div>
+         </div>
+         <div class="item">
+             <img src="img/overwatch.jpg">
+             <div class="carousel-caption">
+                 <h2>守望先锋</h2>
+                 <p>未来地球的战斗</p>
+             </div>
+         </div>
+         <div class="item">
+             <img src="img/stormheros.jpg">
+             <div class="carousel-caption">
+                 <h2>风暴英雄</h2>
+                 <p>风暴圣坛的争夺</p>
+             </div>
+         </div>
+     </div>
+        <!--圆点容器 carousel-indicators-->
+        <ol class="carousel-indicators">
+            <li data-target="#mycarousel" data-slide-to="0"></li>   <!--使用 data-slide-to 来向轮播传递一个原始滑动索引-->
+            <li data-target="#mycarousel" data-slide-to="1"></li>
+            <li data-target="#mycarousel" data-slide-to="2"></li>
+        </ol>
+        <!--左右按钮容器-->
+        <a href="#mycarousel" class="carousel-control left" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a href="#mycarousel" class="carousel-control right"data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div>
+</div>
+</body>
+</html>
